@@ -1,2 +1,2 @@
 label2_id	label2_name
-169	提示语
+18	提示语

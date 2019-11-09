@@ -1,2 +1,2 @@
 label2_id	label2_name
-222	打招呼
+274	打招呼

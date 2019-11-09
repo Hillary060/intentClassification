@@ -10,7 +10,7 @@ class Config(object):
     """配置参数"""
     def __init__(self, dataset, embedding):
         self.model_name = 'TextRCNNFirstClass'
-        data_dir = 'multi-classes/task_data/label1'                                       # 一级分类器数据集目录
+        data_dir = '/data/multi-classes/task_data/label1/'                                       # 一级分类器数据集目录
         self.train_path = dataset + data_dir + 'train.txt'                                # 训练集
         self.dev_path = dataset + data_dir + 'dev.txt'                                    # 验证集
         self.test_path = dataset + data_dir + 'test.txt'                                  # 测试集
