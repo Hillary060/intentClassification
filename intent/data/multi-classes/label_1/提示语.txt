@@ -1,0 +1,2 @@
+label2_id	label2_name
+169	提示语

@@ -1,0 +1,2 @@
+label2_id	label2_name
+58	结束语
