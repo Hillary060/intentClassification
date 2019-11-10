@@ -1,2 +1,0 @@
-label2_id	label2_name
-18	提示语
