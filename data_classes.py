@@ -138,7 +138,8 @@ def get_label_1(file):
         for key in label1_dict:
             # if mkdir_label_1(key):  # 是否使用文件夹，待定
 
-            f.write('\t'.join([key, str(label1_dict[key])]) + '\n')
+            # f.write('\t'.join([key, str(label1_dict[key])]) + '\n')
+            f.write(key + '\n')
 
             # 创建每个label_1的txt文件，用于存储它的二级分类
             filename_label1 = data_dir + '/label_1/' + key + '.txt'

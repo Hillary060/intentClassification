@@ -1,1 +1,1 @@
-CUDA_VISIBLE_DEVICES=1 python run.py --dataset intent --model TextCNN --epoch 100
+python run.py --dataset intent --model TextCNN --epoch 100

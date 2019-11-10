@@ -64,7 +64,7 @@ def build_dataset(config, ues_word):
         return contents  # [([...], 0), ([...], 1), ...]
     train = load_dataset(config.train_path, config.pad_size)
     dev = load_dataset(config.dev_path, config.pad_size)
-    test = load_dataset(config.test_path, config.pad_size)
+    test = load_dataset(config. test_path, config.pad_size)
     return vocab, train, dev, test
 
 
