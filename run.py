@@ -7,11 +7,11 @@ from importlib import import_module
 import argparse
 
 parser = argparse.ArgumentParser(description='Chinese Text Classification')
-parser.add_argument('--model', type=str, required=False, help='choose a model: TextCNN, TextRNN, FastText, TextRCNN, TextRNN_Att, DPCNN, Transformer')
+parser.add_argument('--model', type=str, required=True, help='choose a model: TextCNN, TextRNN, FastText, TextRCNN, TextRNN_Att, DPCNN, Transformer')
 parser.add_argument('--embedding', default='intent', type=str, help='random or pre_trained')
 parser.add_argument('--word', default=False, type=bool, help='True for word, False for char')
 parser.add_argument('--dataset', default='intent', type=str, help='random or pre_trained')
-parser.add_argument('--epoch', default=5, type=int, help='number of eposhs to train')
+parser.add_argument('--epoch', default=5, type=int, help='number of epochs to train')
 args = parser.parse_args()
 
 if __name__ == '__main__':
@@ -21,9 +21,9 @@ if __name__ == '__main__':
     embedding = 'embedding_SougouNews.npz'
     if args.embedding == 'random':
         embedding = 'random'
-    model_name = 'TextCNNFirstClass'
-    args.dataset = 'intent'
-    #model_name = args.model  # 'TextRCNN'  # TextCNN, TextRNN, FastText, TextRCNN, TextRNN_Att, DPCNN, Transformer
+    # model_name = 'TextCNNFirstClass'
+    # args.dataset = 'intent'
+    model_name = args.model  # 'TextRCNN'  # TextCNN, TextRNN, FastText, TextRCNN, TextRNN_Att, DPCNN, Transformer
     if model_name == 'FastText':
         from utils_fasttext import build_dataset, build_iterator, get_time_dif
         embedding = 'random'
