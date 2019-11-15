@@ -76,7 +76,7 @@ def static(data, data_dir):
 
 if __name__=='__main__':
 	data_dir = 'intent/data'
-	data = read_raw(os.path.join(data_dir, 'samples6000_right.txt'))
+	data = read_raw(os.path.join(data_dir, 'samples10000.txt'))
 	print(len(data))
 	static(data, data_dir)
 	process(data, data_dir)
